@@ -9,6 +9,8 @@ import WebPage from 'main/screenshot/webpage';
 import screenshotSfx from 'renderer/assets/sfx/screenshot.mp3';
 import { updateWebViewHeightAndScale } from 'common/webViewUtils';
 import { ColorBlindnessTools } from './ColorBlindnessTools';
+import { DebugDropDown } from '../../DebugDropDown';
+import { DebugTools } from './DebugTools';
 
 interface Props {
   webview: Electron.WebviewTag | null;
@@ -190,6 +192,7 @@ const Toolbar = ({
         <Button onClick={toggleRulers} title="Show rulers">
           <Icon icon="tdesign:measurement-1" />
         </Button>
+        <DebugTools webview={webview} />
         <ColorBlindnessTools webview={webview} />
       </div>
       <Button
