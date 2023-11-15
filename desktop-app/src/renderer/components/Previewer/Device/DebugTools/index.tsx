@@ -22,7 +22,7 @@ interface Props {
 }
 
 const STYLESHEETS = {
-  [DEBUGTOOLS.GRID]: ((size = 1): string => grid(size))(),
+  [DEBUGTOOLS.GRID]: ((size = 15): string => grid(size))(),
   [DEBUGTOOLS.LAYOUT]: layout,
   [DEBUGTOOLS.A11YCSS]: a11ycss,
   [DEBUGTOOLS.HOSTILE]: hostile,
