@@ -51,7 +51,7 @@ export const DEBUGTOOLS = {
   GRID: 'grid',
 };
 
-export const LAYOUT = [DEBUGTOOLS.LAYOUT, DEBUGTOOLS.GRID];
+export const LAYOUT = [DEBUGTOOLS.LAYOUT, DEBUGTOOLS.GRID, DEBUGTOOLS.HOSTILE];
 export const A11Y = [DEBUGTOOLS.A11YCSS];
 
 interface Props {
