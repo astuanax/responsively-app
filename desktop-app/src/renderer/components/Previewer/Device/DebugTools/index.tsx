@@ -8,7 +8,7 @@ import {
 } from '../../../DebugDropDown';
 import { DEBUGGER_CHANNEL } from '../../../ToolBar/DebugControls';
 
-import { a11ycss, grid, hostile, layout } from '../assets';
+import { a11ycss, grid, hostile, layout, highContrast } from '../assets';
 
 interface InjectedCss {
   key: string;
@@ -22,10 +22,11 @@ interface Props {
 }
 
 const STYLESHEETS = {
-  [DEBUGTOOLS.GRID]: ((size = 15): string => grid(size))(),
+  [DEBUGTOOLS.GRID]: ((size = 15, unit = 'px'): string => grid(size, unit))(),
   [DEBUGTOOLS.LAYOUT]: layout,
   [DEBUGTOOLS.A11YCSS]: a11ycss,
   [DEBUGTOOLS.HOSTILE]: hostile,
+  [DEBUGTOOLS.HIGHCONTRAST]: highContrast,
 };
 
 export const DebugTools = ({ webview }: Props) => {

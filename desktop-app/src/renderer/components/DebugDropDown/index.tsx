@@ -46,13 +46,14 @@ export const DEBUGTOOLS = {
   CHAOS: 'chaos',
   HOSTILE: 'hostile',
   A11YCSS: 'a11ycss',
+  HIGHCONTRAST: 'high-contrast',
   ARIA: 'aria',
   ROLE: 'role',
   GRID: 'grid',
 };
 
 export const LAYOUT = [DEBUGTOOLS.LAYOUT, DEBUGTOOLS.GRID, DEBUGTOOLS.HOSTILE];
-export const A11Y = [DEBUGTOOLS.A11YCSS];
+export const A11Y = [DEBUGTOOLS.A11YCSS, DEBUGTOOLS.HIGHCONTRAST];
 
 interface Props {
   debugName: string | undefined;
